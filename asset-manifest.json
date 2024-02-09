@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Netflix/static/css/main.7f58045d.css",
-    "main.js": "/React-Netflix/static/js/main.1533d93f.js",
+    "main.js": "/React-Netflix/static/js/main.baeb9520.js",
     "static/media/fa-solid-900.ttf": "/React-Netflix/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
     "static/media/fa-brands-400.ttf": "/React-Netflix/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
     "static/media/fa-solid-900.woff2": "/React-Netflix/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
@@ -12,10 +12,10 @@
     "static/media/fa-v4compatibility.woff2": "/React-Netflix/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/React-Netflix/index.html",
     "main.7f58045d.css.map": "/React-Netflix/static/css/main.7f58045d.css.map",
-    "main.1533d93f.js.map": "/React-Netflix/static/js/main.1533d93f.js.map"
+    "main.baeb9520.js.map": "/React-Netflix/static/js/main.baeb9520.js.map"
   },
   "entrypoints": [
     "static/css/main.7f58045d.css",
-    "static/js/main.1533d93f.js"
+    "static/js/main.baeb9520.js"
   ]
 }
