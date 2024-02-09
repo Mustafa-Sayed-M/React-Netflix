@@ -1,0 +1,116 @@
+/* Head Title */
+.head_title {
+    width: fit-content;
+    padding-left: 10px;
+    position: relative;
+}
+
+.head_title::before {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    padding: 20px 0;
+    content: '';
+    height: 80%;
+    position: absolute;
+    border-radius: 4px;
+    transform: translateY(-50%);
+    background: rgb(205, 7, 12);
+    background: linear-gradient(90deg, rgba(205, 7, 12, 0.938813025210084) 0%, rgba(13, 12, 16, 1) 92%);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* Star Icon */
+.star_icon {
+    color: var(--star-color);
+}
+
+/* Slider */
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: var(--red-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Font Awesome 6 Free";
+}
+
+.slider .swiper-button-prev::after {
+    content: '\f104';
+}
+
+.slider .swiper-button-next::after {
+    content: '\f105';
+}
+
+@media (max-width: 575px) {
+
+    .slider .swiper-button-prev,
+    .slider .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slider .swiper-button-prev::after,
+    .slider .swiper-button-next::after {
+        font-size: 20px;
+    }
+}
+
+.underLineWhenHover:hover {
+    text-decoration: underline;
+    color: var(--red-color) !important;
+    text-decoration-color: var(--red-color) !important;
+    -moz-text-decoration-color: var(--red-color) !important;
+}
+
+/* Episode */
+.episode_number {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.episode_number p {
+    background-color: var(--red-color);
+}
+
+/* Pagination */
+.pagination button.prev,
+.pagination button.next {
+    color: var(--red-color);
+    border-color: var(--white-color);
+    background-color: var(--white-color);
+}
+
+.pagination button.prev:hover,
+.pagination button.next:hover {
+    color: var(--white-color);
+    border-color: var(--red-color);
+    background-color: var(--red-color);
+}
+
+.pagination li.active a,
+.pagination li:hover a {
+    border-color: var(--red-color);
+    background-color: var(--red-color);
+    color: var(--white-color) !important;
+}

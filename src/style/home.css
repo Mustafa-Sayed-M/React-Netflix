@@ -1,0 +1,86 @@
+.home_page .head_list li {
+    cursor: pointer;
+    width: calc(100% / 3);
+}
+
+@media (max-width: 768px) {
+
+    .home_page .head_list li:nth-child(1),
+    .home_page .head_list li:nth-child(2) {
+        width: 100%;
+    }
+
+}
+
+.home_page .head_list li::before {
+    left: 50%;
+    bottom: -1px;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: var(--red-color);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.home_page .head_list li.active {
+    color: var(--red-color);
+}
+
+.home_page .head_list li.active::before {
+    width: 100%;
+    height: 2px;
+}
+
+.home_page .slider_filtration .slide {
+    cursor: pointer;
+}
+
+.home_page .slider_filtration .slide {
+    background-color: var(--bg-filtration-color);
+}
+
+.home_page .slider_filtration .slide:hover,
+.home_page .slider_filtration .slide.active {
+    background-color: var(--red-color);
+}
+
+.home_page .parent .movies,
+.home_page .parent .series {
+    opacity: 0;
+    z-index: -1;
+    transform-origin: top top;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    background-color: var(--bg-body-color);
+}
+
+.home_page .parent .movies.active,
+.home_page .parent .series.active {
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.home_page .head_list li::before,
+.home_page .head_list li,
+.home_page .slider_filtration .slide,
+.home_page .parent .movies,
+.home_page .parent .series {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}

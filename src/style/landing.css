@@ -1,0 +1,46 @@
+.landing .slider .slide .backdrop::before {
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.landing .slider .slide .rating i {
+    color: var(--star-color);
+}
+
+.landing .slider .slide .overview p {
+    font-size: 15px;
+}
+
+.landing .slider .slide .link_details {
+    background-color: var(--red-color);
+    box-shadow: 0 0 20px var(--red-color);
+}
+
+.landing .slider .slide .btn_add_to_list {
+    background-color: var(--black-color);
+    box-shadow: 0 0 15px var(--black-color);
+}
+
+.landing .slider .slide .btn_add_to_list,
+.landing .slider .slide .link_details {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.landing .slider .slide .link_details:hover {
+    color: var(--red-color) !important;
+    background-color: var(--white-color);
+}
+
+.landing .slider .slide .btn_add_to_list:hover {
+    color: var(--black-color) !important;
+    background-color: var(--white-color);
+}

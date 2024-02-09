@@ -1,0 +1,8 @@
+.input_search {
+    border-color: var(--red-color) !important;
+}
+
+.button_submit {
+    border-color: var(--red-color) !important;
+    background-color: var(--red-color) !important;
+}
